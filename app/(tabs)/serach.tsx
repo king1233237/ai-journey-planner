@@ -1,23 +1,23 @@
-import React from 'react';
-import MapView from 'react-native-maps';
-import { StyleSheet, View } from 'react-native';
+import { WebView } from 'react-native-webview';
+import Constants from 'expo-constants';
+import { StyleSheet } from 'react-native';
 
-export default function App() {
+const localHtmlFile = require('./map.html'); 
+
+
+export default function MAP() {
   return (
-    <View style={styles.container}>
-      <MapView style={styles.map} />
-    </View>
+    <WebView
+      style={styles.container}
+      originWhitelist={['*']} 
+      source={localHtmlFile}
+    />
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  map: {
-    width: '100%',
-    height: '100%',
+    marginTop: Constants.statusBarHeight,
   },
 });
-
-
