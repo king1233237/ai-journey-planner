@@ -1,6 +1,6 @@
-# ai journey map
+# ai journey planner
 
-This is an [Expo](https://expo.dev) project created with [`ai-journey-map`](https://www.npmjs.com/package/create-expo-app).
+This is an [Expo](https://expo.dev) project created with [`ai-journey-planner`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
 
